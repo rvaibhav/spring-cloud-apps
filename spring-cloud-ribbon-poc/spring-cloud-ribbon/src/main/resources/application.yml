@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-cloud-ribbon
+
+server:
+  port: 9090
+
+chatbook:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:9091,localhost:9092,localhost:9093
+    ServerListRefreshInterval: 2000
